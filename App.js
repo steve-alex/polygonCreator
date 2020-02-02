@@ -47,7 +47,6 @@ export default function App() {
   const handleAChange = value => {
     if (validValue) {
       setA(parseInt(value) || 0);
-      // generatePolygon();
       setErrorMessages("");
     }
   };
@@ -78,6 +77,7 @@ export default function App() {
       </Svg>
 
       <Text>{a + b}</Text>
+      <Text>{coordinates}</Text>
       
       <Text>{errorMessages}</Text>
 
